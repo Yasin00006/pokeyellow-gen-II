@@ -335,6 +335,9 @@ LearnMoveFromLevelUp:
 	cp b ; is the move learnt at the mon's current level?
 	ld a, [hli] ; move ID
 	jr nz, .learnSetLoop
+	
+;the move can indeed be learned at this level
+.confirmlearnmove	
 	ld d, a ; ID of move to learn
 	ld a, [wMonDataLocation]
 	and a
@@ -352,7 +355,7 @@ LearnMoveFromLevelUp:
 .checkCurrentMovesLoop ; check if the move to learn is already known
 	ld a, [hli]
 	cp d
-	jr z, .done ; if already known, jump
+	jr z, .movesloop_done ; if already known, jump
 	dec b
 	jr nz, .checkCurrentMovesLoop
 	ld a, d
@@ -363,19 +366,22 @@ LearnMoveFromLevelUp:
 	predef LearnMove
 	ld a, b
 	and a
-	jr z, .done
+	jr z, .movesloop_done
 	callfar IsThisPartymonStarterPikachu_Party
-	jr nc, .done
+	jr z, .movesloop_done
 	ld a, [wMoveNum]
 	cp THUNDERBOLT
 	jr z, .foundThunderOrThunderbolt
 	cp THUNDER
-	jr nz, .done
+	jr z, .movesloop_done
 .foundThunderOrThunderbolt
 	ld a, $5
 	ld [wd49c], a
 	ld a, $85
 	ld [wPikachuMood], a
+.movesloop_done
+	pop hl
+	jr .learnSetLoop	
 .done
 	ld a, [wCurPartySpecies]
 	ld [wPokedexNum], a
