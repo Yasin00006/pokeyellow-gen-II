@@ -1,6 +1,6 @@
 	db DEX_CHARMELEON ; pokedex id
 
-	db  58,  64,  58,  80,  65
+	db  60,  65,  60,  80,  75
 	;   hp  atk  def  spd  spc
 
 	db FIRE, FIRE ; type
