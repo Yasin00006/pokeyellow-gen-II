@@ -101,7 +101,7 @@ BlaineSprite::           INCBIN "gfx/sprites/blaine.2bpp"
 ArticunoSprite::         INCBIN "gfx/sprites/articuno.2bpp"
 MoltresSprite::          INCBIN "gfx/sprites/moltres.2bpp"
 ZapdosSprite::           INCBIN "gfx/sprites/zapdos.2bpp"
-
+KabutoSprite::           INCBIN "gfx/sprites/kabuto.2bpp"
 
 SECTION "NAMEHERE1", ROMX
 
