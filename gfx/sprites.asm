@@ -28,6 +28,7 @@ SnorlaxSprite::          INCBIN "gfx/sprites/snorlax.2bpp"
 OldAmberSprite::         INCBIN "gfx/sprites/old_amber.2bpp"
 GamblerAsleepSprite::    INCBIN "gfx/sprites/gambler_asleep.2bpp"
 QuestionMarkSprite::     INCBIN "gfx/sprites/question_mark.2bpp"
+DoduoSprite::            INCBIN "gfx/sprites/doduo.2bpp"
 
 
 SECTION "NPC Sprites 2", ROMX
@@ -109,7 +110,28 @@ SECTION "NPC Sprites 5", ROMX
 LaprasSprite::           INCBIN "gfx/sprites/lapras.2bpp"
 
 
-SECTION "NAMEHERE1", ROMX
+SECTION "NPC Sprites 6", ROMX
+
+PoliwrathSprite::        INCBIN "gfx/sprites/poliwrath.2bpp"
+MeowthSprite::           INCBIN "gfx/sprites/meowth.2bpp"
+CuboneSprite::           INCBIN "gfx/sprites/cubone.2bpp"
+PsyduckSprite::          INCBIN "gfx/sprites/psyduck.2bpp"
+NidoranmSprite::         INCBIN "gfx/sprites/nidoranm.2bpp"
+NidorinoSprite::         INCBIN "gfx/sprites/nidorino.2bpp"
+NidoranfSprite::         INCBIN "gfx/sprites/nidoranf.2bpp"
+MachopSprite::           INCBIN "gfx/sprites/machop.2bpp"
+MachokeSprite::          INCBIN "gfx/sprites/machoke.2bpp"
+PidgeySprite::           INCBIN "gfx/sprites/pidgey.2bpp"
+PidgeotSprite::          INCBIN "gfx/sprites/pidgeot.2bpp"
+SpearowSprite::          INCBIN "gfx/sprites/spearow.2bpp"
+FearowSprite::           INCBIN "gfx/sprites/fearow.2bpp"
+Seel2Sprite::            INCBIN "gfx/sprites/seel2.2bpp"
+SlowpokeSprite::         INCBIN "gfx/sprites/slowpoke.2bpp"
+KangaskhanSprite::       INCBIN "gfx/sprites/kangaskhan.2bpp"
+WigglytuffSprite::       INCBIN "gfx/sprites/wigglytuff.2bpp"
+
+
+SECTION "Mon Icons 1", ROMX
 
 MonIcons::
 INCBIN "gfx/icons/null.2bpp"
@@ -242,7 +264,7 @@ INCBIN "gfx/icons/magmar.2bpp"
 INCBIN "gfx/icons/pinsir.2bpp"
 
 
-SECTION "NAMEHERE2", ROMX
+SECTION "Mon Icons 2", ROMX
 
 MonIcons2::
 INCBIN "gfx/icons/tauros.2bpp"
