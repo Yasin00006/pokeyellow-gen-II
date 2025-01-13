@@ -224,7 +224,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 	jr z, .notinbattle
 	push bc
 	
-	ld a, [wCurEnemyLVL]	; load the final level into a.
+	ld a, [wCurEnemyLevel]	; load the final level into a.
 	ld c, a	; load the final level to over to c
 	ld a, [wTempCoins1]	; load the evolution level into a
 	ld b, a	; load the evolution level over to b
@@ -232,7 +232,7 @@ Evolution_PartyMonLoop: ; loop over party mons
 .inc_level	; marker for looping back 
 	inc b	;increment 	the current evolution level
 	ld a, b	;put the evolution level in a
-	ld [wCurEnemyLVL], a	;and reset the final level to the evolution level
+	ld [wCurEnemyLevel], a	;and reset the final level to the evolution level
 	push bc	;save b & c on the stack as they hold the currently tracked evolution level a true final level
 	call LearnMoveFromLevelUp
 	pop bc	;get the current evolution and final level values back from the stack
