@@ -78,6 +78,10 @@
 	const SPRITE_ERIKA
 	const SPRITE_SABRINA
 	const SPRITE_BLAINE
+	const SPRITE_ARTICUNO
+	const SPRITE_MOLTRES
+	const SPRITE_ZAPDOS
+	const SPRITE_MEWTWO
 DEF FIRST_STILL_SPRITE EQU const_value
 	const SPRITE_POKE_BALL               ; $47
 	const SPRITE_FOSSIL                  ; $48
