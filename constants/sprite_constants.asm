@@ -83,6 +83,7 @@
 	const SPRITE_ZAPDOS
 	const SPRITE_MEWTWO
 	const SPRITE_KABUTO
+	const SPRITE_LAPRAS
 DEF FIRST_STILL_SPRITE EQU const_value
 	const SPRITE_POKE_BALL               ; $47
 	const SPRITE_FOSSIL                  ; $48

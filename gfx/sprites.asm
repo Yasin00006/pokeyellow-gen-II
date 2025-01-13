@@ -88,6 +88,9 @@ SurfingPikachuSprite::   INCBIN "gfx/sprites/surfing_pikachu.2bpp"
 JessieSprite::           INCBIN "gfx/sprites/jessie.2bpp"
 JamesSprite::            INCBIN "gfx/sprites/james.2bpp"
 MewtwoSprite::           INCBIN "gfx/sprites/mewtwo.2bpp"
+ArticunoSprite::         INCBIN "gfx/sprites/articuno.2bpp"
+MoltresSprite::          INCBIN "gfx/sprites/moltres.2bpp"
+ZapdosSprite::           INCBIN "gfx/sprites/zapdos.2bpp"
 
 
 SECTION "NPC Sprites 4", ROMX
@@ -98,10 +101,13 @@ SurgeSprite::            INCBIN "gfx/sprites/surge.2bpp"
 ErikaSprite::            INCBIN "gfx/sprites/erika.2bpp"
 SabrinaSprite::          INCBIN "gfx/sprites/sabrina.2bpp"
 BlaineSprite::           INCBIN "gfx/sprites/blaine.2bpp"
-ArticunoSprite::         INCBIN "gfx/sprites/articuno.2bpp"
-MoltresSprite::          INCBIN "gfx/sprites/moltres.2bpp"
-ZapdosSprite::           INCBIN "gfx/sprites/zapdos.2bpp"
 KabutoSprite::           INCBIN "gfx/sprites/kabuto.2bpp"
+
+
+SECTION "NPC Sprites 5", ROMX
+
+LaprasSprite::           INCBIN "gfx/sprites/lapras.2bpp"
+
 
 SECTION "NAMEHERE1", ROMX
 
