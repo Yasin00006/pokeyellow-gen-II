@@ -21,7 +21,7 @@ DEF SPECIAL EQU const_value
 	const WATER        
 	const GRASS        
 	const ELECTRIC     
-	const PSYCHIC_TYPE ;
+	const PSYCHIC_TYPE
 	const ICE          
 	const GHOST
 
