@@ -34,17 +34,25 @@ _Museum2FHikerText::
 	done
 
 _Museum2FPikachuText1::
-	text "Your PIKACHU looks"
-	line "untamed."
-	cont "May I have it for"
-	cont "my daughter?"
+	text "Wow! Your PIKACHU"
+	line "looks really strong"
+	cont "May I have"
+	cont "it for my"
+	cont "daughter?"
 	done
 
 _Museum2FPikachuText2::
-	text "I'd like to get"
-	line "that PIKACHU off"
-	cont "you, but it's too"
-	cont "attached to you."
+	text "I'd love to get"
+	line "that strong"
+	cont "looking PIKACHU"
+	cont "off you!"
+	
+	para "Too bad it looks"
+	line "so attached"
+	cont "to you."
+	cont "They've been"
+	cont "so hard"
+	cont "to find lately!"
 	done
 
 _Museum2FSpaceShuttleSignText::
