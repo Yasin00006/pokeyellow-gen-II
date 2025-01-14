@@ -157,16 +157,6 @@ SetPal_Overworld:
 	jr c, .normalDungeonOrBuilding
 	cp CERULEAN_CAVE_1F + 1
 	jr c, .caveOrBruno
-	cp SEAFOAM_ISLANDS_B1F
-	jr z, .SeafoamIslands
-	cp SEAFOAM_ISLANDS_B2F
-	jr z, .SeafoamIslands
-	cp SEAFOAM_ISLANDS_B3F
-	jr z, .SeafoamIslands
-	cp SEAFOAM_ISLANDS_B4F
-	jr z, .SeafoamIslands
-	cp SEAFOAM_ISLANDS_1F
-	jr z, .SeafoamIslands
 	cp LORELEIS_ROOM
 	jr z, .Lorelei
 	cp BRUNOS_ROOM
@@ -195,9 +185,6 @@ SetPal_Overworld:
 .caveOrBruno
 	ld a, PAL_CAVE - 1
 	jr .town
-.SeafoamIslands
-	ld a, PAL_CERULEAN - 1
-	jr .town	
 .Lorelei
 	xor a
 	jr .town
