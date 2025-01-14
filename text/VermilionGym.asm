@@ -35,7 +35,7 @@ _VermilionGymLTSurgePostBattleAdviceText::
 _VermilionGymLTSurgeThunderBadgeInfoText::
 	text "The THUNDERBADGE"
 	line "cranks up your"
-	cont "#MON's SPEED!"
+	cont "#MON's DEFENSE!"
 
 	para "It also lets your"
 	line "#MON FLY any-"
