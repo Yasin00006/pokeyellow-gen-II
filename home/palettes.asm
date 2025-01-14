@@ -24,7 +24,7 @@ GBPalNormal::
 ; Reset OBP0 to default
 	ld a, %11010000 ; 3100
 	jr GBPalOBP0Set
-	GBPalIcons::
+GBPalIcons::
 ; Reset OBP0 for icons
 	ld a, %11100100 ; 3210
 GBPalOBP0Set:
