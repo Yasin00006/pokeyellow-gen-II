@@ -475,6 +475,7 @@ INCLUDE "engine/menus/save.asm"
 
 SECTION "Engine Spillover", ROMX
 
+INCLUDE "engine/menus/item_descriptions.asm"
 INCLUDE "engine/gfx/animated_tiles_code.asm"
 
 
