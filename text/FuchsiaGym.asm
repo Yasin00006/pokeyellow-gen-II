@@ -198,7 +198,7 @@ _FuchsiaGymRocker6AfterBattleText::
 	done
 
 _FuchsiaGymGymGuideChampInMakingText::
-	text "Yo! Champ in"
+	text "Yo! CHAMP in"
 	line "making!"
 
 	para "FUCHSIA GYM is"
