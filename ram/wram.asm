@@ -285,7 +285,8 @@ wPrinterStatusReceived:: db
 
 wc6f2:: db
 wc6f3:: db
-	ds 12
+	ds 11
+wTempLevelStore:: db
 wLYOverrides:: ds $100
 wLYOverridesEnd::
 wLYOverridesBuffer:: ds $100
@@ -2438,7 +2439,7 @@ wOpponentAfterWrongAnswer:: db
 ; mostly copied from map-specific map script pointer and written back later
 wCurMapScript:: db
 
-	ds 7
+wStartBattleLevels:: ds PARTY_LENGTH ; pureRGBnote: ADDED: tracker for base stats of the player pokemon in battle, used for comparisons in opponent AI
 
 wPlayTimeHours:: db
 wPlayTimeMaxed:: db
