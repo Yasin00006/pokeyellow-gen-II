@@ -335,7 +335,10 @@ StartMenu_Item::
 	ld [wListMenuID], a
 	ld a, [wBagSavedMenuItem]
 	ld [wCurrentMenuItem], a
+	ld a, 1
+	ld [wTempFlag], a
 	call DisplayListMenuID
+	jp nz, .sortItems
 	ld a, [wCurrentMenuItem]
 	ld [wBagSavedMenuItem], a
 	jr nc, .choseItem
@@ -454,6 +457,9 @@ StartMenu_Item::
 	call TossItem
 .tossZeroItems
 	jp ItemMenuLoop
+.sortItems
+	callfar SortItems
+	jp ItemMenuLoop
 
 CannotUseItemsHereText:
 	text_far _CannotUseItemsHereText
@@ -479,6 +485,9 @@ StartMenu_TrainerInfo::
 	predef DrawBadges ; draw badges
 	ld b, SET_PAL_TRAINER_CARD
 	call RunPaletteCommand
+	ld a, [wOnSGB]
+	and a
+	call z, Delay3
 	call GBPalNormal
 	call WaitForTextScrollButtonPress ; wait for button press
 	call GBPalWhiteOut
@@ -487,6 +496,9 @@ StartMenu_TrainerInfo::
 	call RunDefaultPaletteCommand
 	call ReloadMapData
 	farcall DrawStartMenu ; XXX what difference does this make?
+	ld a, [wOnSGB]
+	and a
+	call z, Delay3
 	call LoadGBPal
 	pop af
 	ldh [hTileAnimations], a
