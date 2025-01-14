@@ -112,12 +112,6 @@ Evolution_PartyMonLoop: ; loop over party mons
 	ld [wCurEnemyLevel], a
 	ld a, 1
 	ld [wEvolutionOccurred], a
-	ld a, [wTempCoins1]
-	cp b
-	jp nc, .evoLevelRequirementSatisfied
-	ld a, b
-	ld [wTempCoins1], a
-.evoLevelRequirementSatisfied	
 	push hl
 	ld a, [hl]
 	ld [wEvoNewSpecies], a
@@ -218,32 +212,6 @@ Evolution_PartyMonLoop: ; loop over party mons
 	xor a
 	ld [wMonDataLocation], a
 	call LearnMoveFromLevelUp
-	ld a, [wIsInBattle]
-	and a
-	jr z, .notinbattle
-	push bc
-	
-	ld a, [wCurEnemyLevel]	; load the final level into a.
-	ld c, a	; load the final level to over to c
-	ld a, [wTempCoins1]	; load the evolution level into a
-	ld b, a	; load the evolution level over to b
-	dec b
-.inc_level	; marker for looping back 
-	inc b	;increment 	the current evolution level
-	ld a, b	;put the evolution level in a
-	ld [wCurEnemyLevel], a	;and reset the final level to the evolution level
-	push bc	;save b & c on the stack as they hold the currently tracked evolution level a true final level
-	call LearnMoveFromLevelUp
-	pop bc	;get the current evolution and final level values back from the stack
-	ld a, b	;load the current evolution level into a
-	cp c	;compare it with the final level
-	jr nz, .inc_level	;loop back again if final level has not been reached
-	
-	pop bc
-	jr .skipfix_end
-.notinbattle
-	call LearnMoveFromLevelUp
-.skipfix_end
 	pop hl
 	predef SetPartyMonTypes
 	ld a, [wIsInBattle]
@@ -354,24 +322,10 @@ Evolution_ReloadTilesetTilePatterns:
 	ret z
 	jp ReloadTilesetTilePatterns
 
-LearnMoveFromLevelUp: ; FIXED: supports learning multiple moves at the same level
-	ld hl, EvosMovesPointerTable
-	ld a, [wNamedObjectIndex] ; species
+LearnMoveFromLevelUp:
+	ld a, [wPokedexNum] ; species
 	ld [wCurPartySpecies], a
-	dec a
-	ld bc, 0
-	ld hl, EvosMovesPointerTable
-	add a
-	rl b
-	ld c, a
-	add hl, bc
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
-.skipEvolutionDataLoop ; loop to skip past the evolution data, which comes before the move data
-	ld a, [hli]
-	and a ; have we reached the end of the evolution data?
-	jr nz, .skipEvolutionDataLoop ; if not, jump back up
+	call GetMonLearnset
 .learnSetLoop ; loop over the learn set until we reach a move that is learnt at the current level or the end of the list
 	ld a, [hli]
 	and a ; have we reached the end of the learn set?
@@ -381,8 +335,6 @@ LearnMoveFromLevelUp: ; FIXED: supports learning multiple moves at the same leve
 	cp b ; is the move learnt at the mon's current level?
 	ld a, [hli] ; move ID
 	jr nz, .learnSetLoop
-.confirmlearnmove
-	push hl		
 	ld d, a ; ID of move to learn
 	ld a, [wMonDataLocation]
 	and a
@@ -400,7 +352,7 @@ LearnMoveFromLevelUp: ; FIXED: supports learning multiple moves at the same leve
 .checkCurrentMovesLoop ; check if the move to learn is already known
 	ld a, [hli]
 	cp d
-	jr z, .movesloop_done ; if already known, jump
+	jr z, .done ; if already known, jump
 	dec b
 	jr nz, .checkCurrentMovesLoop
 	ld a, d
@@ -409,9 +361,21 @@ LearnMoveFromLevelUp: ; FIXED: supports learning multiple moves at the same leve
 	call GetMoveName
 	call CopyToStringBuffer
 	predef LearnMove
-.movesloop_done
-	pop hl
-	jr .learnSetLoop
+	ld a, b
+	and a
+	jr z, .done
+	callfar IsThisPartymonStarterPikachu_Party
+	jr nc, .done
+	ld a, [wMoveNum]
+	cp THUNDERBOLT
+	jr z, .foundThunderOrThunderbolt
+	cp THUNDER
+	jr nz, .done
+.foundThunderOrThunderbolt
+	ld a, $5
+	ld [wd49c], a
+	ld a, $85
+	ld [wPikachuMood], a
 .done
 	ld a, [wCurPartySpecies]
 	ld [wPokedexNum], a
