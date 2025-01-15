@@ -95,6 +95,8 @@ DisplayPokemonCenterDialogue_::
 	ld hl, PokemonCenterFarewellText
 	call PrintText
 	call UpdateSprites
+	ld a, PLAYER_DIR_DOWN
+	ld [wPlayerMovingDirection], a
 	ret
 
 Func_6eaa:
