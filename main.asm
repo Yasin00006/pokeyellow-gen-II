@@ -603,6 +603,7 @@ INCLUDE "engine/events/give_pokemon.asm"
 INCLUDE "engine/battle/get_trainer_name.asm"
 INCLUDE "engine/math/random.asm"
 INCLUDE "engine/predefs.asm"
+INCLUDE "engine/overworld/field_moves.asm"
 
 
 SECTION "Surfing Minigame", ROMX
