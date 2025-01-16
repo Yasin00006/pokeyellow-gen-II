@@ -3,10 +3,10 @@ Route21WildMons:
 	db 25, PIDGEY
 	db 23, RATTATA
 	db 23, PIDGEY
-	db 21, PIDGEY
 	db 27, MR_MIME
 	db 25, RATTATA
 	db 25, RATICATE
+	db 28, TANGELA
 	db 27, PIDGEOTTO
 	db 29, PIDGEOTTO
 	db 30, PIDGEOT
