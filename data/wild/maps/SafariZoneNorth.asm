@@ -7,7 +7,7 @@ SafariZoneNorthWildMons:
 	db 34, RHYHORN
 	db 36, MAROWAK
 	db 35, KANGASKHAN
-	db 35, RHYHORN
+	db 35, PINSIR
 	db 36, RHYHORN
 	db 40, CHANSEY
 	end_grass_wildmons

@@ -6,10 +6,10 @@ VictoryRoad3FWildMons:
 	db 47, GOLBAT
 	db 45, GOLEM
 	db 46, ONIX
-	db 46, RHYDON
+	db 46, ONIX
 	db 48, GOLEM
-	db 48, HITMONCHAN
-	db 48, HITMONLEE
+	db 48, RHYDON
+	db 48, RHYDON
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

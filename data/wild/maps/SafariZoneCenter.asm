@@ -7,7 +7,7 @@ SafariZoneCenterWildMons:
 	db 36, NIDOKING
 	db 36, NIDOQUEEN
 	db 36, WEEPINBELL
-	db 37, WEEPINBELL
+	db 37, PARASECT
 	db 35, TANGELA
 	db 32, CHANSEY
 	end_grass_wildmons
