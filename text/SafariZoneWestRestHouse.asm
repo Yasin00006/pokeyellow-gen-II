@@ -8,7 +8,7 @@ _SafariZoneWestRestHouseScientistText::
 
 _SafariZoneWestRestHouseCooltrainerMText::
 	text "Using BAIT will"
-	line "help stop #MON"
+	line "stop #MON"
 	cont "from running away."
 	done
 
