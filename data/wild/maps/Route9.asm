@@ -3,13 +3,13 @@ Route9WildMons:
 	db 16, NIDORAN_M
 	db 16, NIDORAN_F
 	db 18, RATTATA
-	db 18, NIDORAN_M
-	db 18, NIDORAN_F
-	db 17, SPEAROW
+	db 18, EKANS
+	db 18, SANDSHREW
+	db 18, SPEAROW
 	db 18, NIDORINO
 	db 18, NIDORINA
 	db 20, RATICATE
-	db 19, FEAROW
+	db 23, FEAROW
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
