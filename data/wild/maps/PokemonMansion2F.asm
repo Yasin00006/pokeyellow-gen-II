@@ -1,14 +1,14 @@
 PokemonMansion2FWildMons:
 	def_grass_wildmons 10 ; encounter rate
 	db 37, RATTATA
-	db 37, RATICATE
+	db 38, RATICATE
 	db 36, VULPIX
 	db 36, GROWLITHE
 	db 39, KOFFING
 	db 40, GRIMER
+	db 42, KOFFING
+	db 40, GRIMER
 	db 42, MUK
-	db 40, MAGMAR
-	db 42, MAGMAR
 	db 45, WEEZING
 	end_grass_wildmons
 
