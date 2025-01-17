@@ -2,21 +2,13 @@ _ViridianSchoolHouseBrunetteGirlText::
 	text "Whew! I'm trying"
 	line "to memorize all"
 	cont "my notes."
-	
-	para "What's this?"
-	line "I don't know"
-	cont "what type SLAM"
-	cont "is!"
 	done
 
 _ViridianSchoolHouseLittleGirlText::
 	text "Sis says #MON"
-	line "will evolve"
-	cont "if you train them"
+	line "will become tame"
+	cont "if you treat them"
 	cont "nicely."
-	
-	para "trading them is"
-	line "not necessary!"
 	done
 
 _ViridianSchoolHouseCooltrainerFText::

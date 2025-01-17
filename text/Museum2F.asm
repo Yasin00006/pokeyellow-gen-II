@@ -34,9 +34,9 @@ _Museum2FHikerText::
 	done
 
 _Museum2FPikachuText1::
-	text "Wow! Your PIKACHU"
-	line "looks really strong"
-	cont "May I have"
+	text "Your PIKACHU looks"
+	line "stronger than"
+	cont "most. May I have"
 	cont "it for my"
 	cont "daughter?"
 	done
@@ -46,12 +46,10 @@ _Museum2FPikachuText2::
 	line "that strong"
 	cont "looking PIKACHU"
 	cont "off you!"
-	
+
 	para "Too bad it looks"
-	line "so attached"
-	cont "to you."
-	cont "They've been"
-	cont "so hard"
+	line "so attached."
+	cont "They've been hard"
 	cont "to find lately!"
 	done
 
