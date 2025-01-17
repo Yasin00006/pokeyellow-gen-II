@@ -106,7 +106,9 @@ BugCatcherData:
 	db 21, BUTTERFREE, BEEDRILL, SCYTHER, 0
 ; Viridian Forest
 	db 8, CATERPIE, METAPOD, 0
-
+; Victory Road
+	db 53, SCYTHER, KABUTOPS, STARMIE, BLASTOISE, 0
+	
 LassData:
 ; Route 3
 	db 9, PIDGEY, PIDGEY, 0
@@ -267,7 +269,9 @@ HikerData:
 	db $FF, 24, MACHOP, 25, MACHOKE, 0
 	db 24, ONIX, SANDSHREW, ONIX, 0
 	db $FF, 24, GEODUDE, 25, GRAVELER, 0
-
+; Victory Road
+	db 52, AERODACTYL, PARASECT, JOLTEON, ARCANINE, 0
+	
 BikerData:
 ; Route 13
 	db 29, SHELLDER, WEEZING, CLOYSTER, 0
@@ -306,7 +310,9 @@ BurglarData:
 	db 43, NINETALES, 0
 ; Mansion B1F
 	db 44, MACHOKE, RAPIDASH, 0
-
+; Victory Road
+	db 53, FLAREON, TENTACRUEL, NINETALES, DEWGONG, 0
+	
 EngineerData:
 ; Unused
 	db 21, VOLTORB, MAGNEMITE, 0
@@ -406,7 +412,9 @@ BeautyData:
 	db 43, DRAGONAIR, GYARADOS, SEADRA, 0
 ; Route 20
 	db 43, BLASTOISE, DEWGONG, SLOWBRO, 0
-
+; Victory Road
+	db 53, RAICHU, HYPNO, PERSIAN, TAUROS, 0
+	
 PsychicData:
 ; Saffron Gym
 	db 42, KADABRA, SLOWBRO, HYPNO, KADABRA, 0
@@ -424,7 +432,7 @@ JugglerData:
 ; Silph Co. 5F
 	db 37, KADABRA, MR_MIME, 0
 ; Victory Road 2F
-	db 51, POLIWRATH, HYPNO, FLAREON, JOLTEON, 0
+	db 51, POLIWRATH, RHYDON, FLAREON, JOLTEON, 0
 ; Fuchsia Gym
 	db 34, BEEDRILL, NIDOKING, GOLBAT, HAUNTER, 0
 	db 37, TENTACRUEL, MUK, 0
