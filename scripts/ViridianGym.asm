@@ -227,6 +227,9 @@ ViridianGymGiovanniText:
 	call GBFadeInFromBlack
 	jr .text_script_end
 .beforeBeat
+	ld c, BANK(Music_YellowUnusedSong)
+	ld a, MUSIC_YELLOW_UNUSED_SONG
+	call PlayMusic
 	ld hl, .PreBattleText
 	call PrintText
 	ld hl, wStatusFlags3
