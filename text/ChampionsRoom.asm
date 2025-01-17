@@ -42,7 +42,7 @@ _RivalDefeatedText::
 
 	para "After all that"
 	line "work to become"
-	cont "LEAGUE champ?"
+	cont "LEAGUE CHAMP?"
 
 	para "My reign is over"
 	line "already?"

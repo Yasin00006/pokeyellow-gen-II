@@ -100,7 +100,8 @@ _CeladonGymEndBattleText2::
 _CeladonGymAfterBattleText2::
 	text "Bleaah!"
 	line "I hope ERIKA"
-	cont "wipes you out!"
+	cont "wipes you with"
+	cont "her strong moves!"
 	done
 
 _CeladonGymBattleText3::
@@ -156,9 +157,9 @@ _CeladonGymAfterBattleText5::
 	line "type #MON at"
 	cont "our GYM!"
 
-	para "We also use them"
-	line "for making flower"
-	cont "arrangements!"
+	para "A lot of them"
+	line "are dual"
+	cont "poison-types!"
 	done
 
 _CeladonGymBattleText6::
@@ -177,6 +178,10 @@ _CeladonGymAfterBattleText6::
 	line "might be quiet,"
 	cont "but she's also"
 	cont "very skilled!"
+
+	para "You better"
+	line "watch out for"
+	cont "her SOLARBEAM!"
 	done
 
 _CeladonGymBattleText7::
@@ -192,9 +197,17 @@ _CeladonGymEndBattleText7::
 
 _CeladonGymAfterBattleText7::
 	text "I have a blind"
-	line "date coming up."
-	cont "I have to learn"
-	cont "to be polite."
+	line "date coming up"
+	cont "and I'm nervous!"
+
+	para "Going into an"
+	line "uncertain event"
+	cont "can be scary!"
+
+	para "It's important"
+	line "to prepare for"
+	cont "all possible"
+	cont "outcomes!"
 	done
 
 _CeladonGymBattleText8::
@@ -212,9 +225,11 @@ _CeladonGymEndBattleText8::
 	prompt
 
 _CeladonGymAfterBattleText8::
-	text "I didn't bring my"
-	line "best #MON!"
+	text "I may have lost"
+	line "but watch out!"
 
-	para "Wait 'til next"
-	line "time!"
+	para "ERIKA has a"
+	line "dynamic team"
+	cont "with lots of"
+	cont "strategies!"
 	done

@@ -108,21 +108,33 @@ _CeruleanGymAfterBattleText2::
 	done
 
 _CeruleanGymGymGuideChampInMakingText::
-	text "Yo! Champ in"
+	text "Yo! CHAMP in"
 	line "making!"
 
 	para "Here's my advice!"
 
 	para "The LEADER, MISTY,"
-	line "is a pro who uses"
-	cont "water #MON!"
+	line "is offensively"
+	cont "focused!"
 
-	para "You can drain all"
-	line "their water with"
-	cont "plant #MON!"
+	para "Not only do"
+	line "her water moves"
+	cont "hit hard, she"
+	cont "is very smart!"
 
-	para "Or, zap them with"
-	line "electricity!"
+	para "Her lead and ace"
+	line "know psychic-"
+	cont "type moves!"
+
+	para "This helps cover"
+	line "her weaknesses"
+	cont "from many dual"
+	cont "poison-types."
+
+	para "Electric-types"
+	line "seem to be the"
+	cont "best counter to"
+	cont "this team of 3!"
 	done
 
 _CeruleanGymGymGuideBeatMistyText::

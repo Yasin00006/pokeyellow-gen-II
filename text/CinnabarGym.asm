@@ -58,8 +58,8 @@ _CinnabarGymBlaineTM38ExplanationText::
 	para "Teach it to fire-"
 	line "type #MON!"
 
-	para "CHARMELEON or"
-	line "PONYTA would be"
+	para "CHARIZARD or"
+	line "RAPIDASH would be"
 	cont "good bets!"
 	done
 
@@ -141,6 +141,9 @@ _CinnabarGymSuperNerd4AfterBattleText::
 _CinnabarGymSuperNerd5BattleText::
 	text "I know why BLAINE"
 	line "became a trainer!"
+	
+	para "I'll tell you if"
+	line "you beat me!"
 	done
 
 _CinnabarGymSuperNerd5EndBattleText::
@@ -192,7 +195,7 @@ _CinnabarGymSuperNerd7AfterBattleText::
 	done
 
 _CinnabarGymGymGuideChampInMakingText::
-	text "Yo! Champ in"
+	text "Yo! CHAMP in"
 	line "making!"
 
 	para "The hot-headed"
@@ -200,10 +203,14 @@ _CinnabarGymGymGuideChampInMakingText::
 	cont "#MON pro!"
 
 	para "Douse his spirits"
-	line "with water!"
+	line "with water but"
+	cont "be careful of"
+	cont "his counters!"
 
-	para "You better take"
-	line "some BURN HEALs!"
+	para "He's got a lot"
+	line "of coverage moves"
+	cont "to check your"
+	cont "effective #MON."
 	done
 
 _CinnabarGymGymGuideBeatBlaineText::
