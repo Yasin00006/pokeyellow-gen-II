@@ -486,11 +486,10 @@ ArcanineEvosMoves:
 ; Learnset
 	db 16, EMBER
 	db 19, LEER
-	db 23, TAKE_DOWN
-	db 30, AGILITY
+	db 26, TAKE_DOWN
 	db 35, FLAMETHROWER
-	db 38, BODY_SLAM
-	db 42, FIRE_SPIN
+	db 40, AGILITY
+	db 45, FIRE_SPIN
 	db 0
 
 MewEvosMoves:
@@ -571,10 +570,10 @@ ScytherEvosMoves:
 	db 0
 ; Learnset
 	db 6, FOCUS_ENERGY
-	db 16, DOUBLE_TEAM
-	db 24, SLASH
+	db 24, AGILITY
 	db 30, WING_ATTACK
-	db 40, AGILITY
+	db 36, SLASH
+	db 40, DOUBLE_TEAM
 	db 50, SWORDS_DANCE
 	db 0
 
@@ -634,10 +633,10 @@ TangelaEvosMoves:
 	db 21, POISONPOWDER
 	db 23, STUN_SPORE
 	db 25, SLEEP_POWDER
+	db 28, BIND
 	db 32, MEGA_DRAIN
 	db 42, BODY_SLAM
 	db 45, GROWTH
-	db 48, BIND
 	db 0
 
 MissingNo1FEvosMoves:
@@ -670,6 +669,7 @@ OnixEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db  9, BIND
 	db 12, ROCK_THROW
 	db 19, DIG
 	db 25, RAGE
@@ -677,7 +677,6 @@ OnixEvosMoves:
 	db 31, SLAM
 	db 37, ROCK_SLIDE
 	db 43, EARTHQUAKE
-	db 48, BIND
 	db 0
 
 FearowEvosMoves:
@@ -776,8 +775,8 @@ MachokeEvosMoves:
 	db EVOLVE_LEVEL, 37, MACHAMP
 	db 0
 ; Learnset
-	db 5, LEER
-	db 7, FOCUS_ENERGY
+	db  5, LEER
+	db  7, FOCUS_ENERGY
 	db 19, SEISMIC_TOSS
 	db 28, SUBMISSION
 	db 33, BODY_SLAM
@@ -1559,6 +1558,7 @@ VaporeonEvosMoves:
 	db 26, BUBBLEBEAM
 	db 30, BITE
 	db 36, AURORA_BEAM
+	db 39, MIST
 	db 39, HAZE
 	db 41, ACID_ARMOR
 	db 47, REST
@@ -1574,9 +1574,9 @@ MachopEvosMoves:
 	db  7, FOCUS_ENERGY
 	db 19, SEISMIC_TOSS
 	db 28, SUBMISSION
-	db 33, TAKE_DOWN
-	db 37, COUNTER
-	db 45, KARATE_CHOP
+	db 32, BODY_SLAM
+	db 35, COUNTER
+	db 38, KARATE_CHOP
 	db 0
 
 ZubatEvosMoves:
@@ -1710,12 +1710,12 @@ PrimeapeEvosMoves:
 	db 0
 ; Learnset
 	db 9, LOW_KICK
-	db 15, KARATE_CHOP
-	db 21, FURY_SWIPES
-	db 27, FOCUS_ENERGY
+	db 15, FURY_SWIPES
+	db 21, KARATE_CHOP
+	db 26, FOCUS_ENERGY
 	db 28, RAGE
-	db 37, SEISMIC_TOSS
-	db 46, THRASH
+	db 33, SEISMIC_TOSS
+	db 39, THRASH
 	db 45, SCREECH
 	db 0
 
@@ -1813,8 +1813,8 @@ MachampEvosMoves:
 	db  7, FOCUS_ENERGY
 	db 19, SEISMIC_TOSS
 	db 28, SUBMISSION
-	db 33, COUNTER
-	db 38, TAKE_DOWN
+	db 33, TAKE_DOWN
+	db 37, COUNTER
 	db 45, KARATE_CHOP
 	db 0
 
@@ -2101,11 +2101,7 @@ StarmieEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 7, WATER_GUN
-	db 10, CONFUSION
-	db 15, SWIFT
-	db 22, HARDEN
-	db 24, BUBBLEBEAM
+	db 23, HARDEN
 	db 27, RECOVER
 	db 37, MINIMIZE
 	db 40, PSYCHIC_M

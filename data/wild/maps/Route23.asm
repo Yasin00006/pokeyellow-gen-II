@@ -9,7 +9,7 @@ Route23WildMons:
 	db 41, SANDSLASH
 	db 41, ARBOK
 	db 45, FEAROW
-	db 55, PRIMEAPE
+	db  5, EEVEE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

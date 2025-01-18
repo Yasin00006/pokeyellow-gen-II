@@ -33,9 +33,21 @@ _PalletTownGirlText::
 	text "I'm raising"
 	line "#MON too!"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "Like my new"
+	line "RUNNING SHOES?"
+
+	para "I can get to"
+	line "VIRIDIAN MART"
+	cont "in record time!"
+
+	para "I can't run to"
+	line "CINNABAR ISLAND," 
+	cont "but I can see"
+	cont "it from here!"
+
+	para "Is someone"
+	line "surfing on a"
+	cont "RHYDON?"
 	done
 
 _PalletTownFisherText::

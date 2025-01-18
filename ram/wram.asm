@@ -1370,11 +1370,11 @@ wBattleMon:: battle_struct wBattleMon
 
 wTrainerClass:: db
 
-	ds 1
-
 wTrainerPicPointer:: dw
 
-	ds 1
+; used by pureRGB AI
+wEnemyLastSelectedMoveDisable:: db
+wPlayerLastSelectedMove:: db
 
 UNION
 wTempMoveNameBuffer:: ds 14
@@ -1384,14 +1384,16 @@ NEXTU
 wLearnMoveMonName:: ds NAME_LENGTH
 ENDU
 
-	ds 2
+; For the pureRGB AI enhancements
+wAIMoveSpamAvoider:: db
+wAITargetMonStatus:: db
+wAITargetMonType1:: db
+wAITargetMonType2:: db
 
 ; money received after battle = base money × level of last enemy mon
 wTrainerBaseMoney:: dw ; BCD
 
 wMissableObjectCounter:: db
-
-	ds 1
 
 ; 13 bytes for the letters of the opposing trainer
 ; the name is terminated with $50 with possible
@@ -1480,8 +1482,6 @@ wEnemyToxicCounter:: db
 ; high nibble: which move is disabled (1-4)
 ; low nibble: disable turns left
 wEnemyDisabledMove:: db
-
-	ds 1
 
 UNION
 ; the amount of damage accumulated by the player while biding

@@ -132,7 +132,7 @@ _PewterGymGuidePreAdviceText::
 	text "Hiya! I can tell"
 	line "you have what it"
 	cont "takes to become a"
-	cont "#MON champ!"
+	cont "#MON CHAMP!"
 
 	para "I'm no trainer,"
 	line "but I can tell"
@@ -148,15 +148,14 @@ _PewterGymGuideBeginAdviceText::
 	prompt
 
 _PewterGymGuideAdviceText::
-	text "The 1st #MON"
-	line "out in a match is"
-	cont "at the top of the"
-	cont "#MON LIST!"
+	text "It will be tough"
+	line "for your PIKACHU"
+	cont "at this GYM!"
 
-	para "By changing the"
-	line "order of #MON,"
-	cont "matches could be"
-	cont "made easier!"
+	para "Electric attacks"
+	line "are harmless to"
+	cont "BROCK's ground-"
+	cont "type #MON."
 	done
 
 _PewterGymGuideFreeServiceText::
@@ -168,19 +167,23 @@ _PewterGymGuideFreeServiceText::
 _PewterGymGuidePostBattleText::
 	text "Just as I thought!"
 	line "You're #MON"
-	cont "champ material!"
+	cont "CHAMP material!"
 	done
 
 _PewterGymGuyText::
 	text "All right! Let's"
 	line "get happening!"
 
-	para "It will be tough"
-	line "for your PIKACHU"
-	cont "at this GYM!"
+	para "BROCK's lead"
+	line "is GEODUDE!"
 
-	para "Electric attacks"
-	line "are harmless to"
-	cont "BROCK's ground-"
-	cont "type #MON."
+	para "Offense driven,"
+	line "it can throw"
+	cont "rocks with high"
+	cont "accuracy!"
+	
+	para "His ONIX is"
+	line "all defense!"
+	cont "Watch out for"
+	cont "its BIND!"
 	done
