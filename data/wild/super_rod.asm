@@ -31,3 +31,50 @@ SuperRodFishingSlots::
 	db CERULEAN_CAVE_1F, SEAKING, 55, POLIWRATH, 55, CLOYSTER, 55, STARMIE, 55
 	db CERULEAN_CAVE_B1F, SEAKING, 60, KINGLER, 60, CLOYSTER, 60, STARMIE, 60
 	db -1 ; end
+
+CheckMapForFishingMon:
+	push hl
+	push bc
+	ld hl, SuperRodFishingSlots
+.loop
+	ld a, [hl] ; current map idW
+	cp $ff
+	jr z, .done
+	ld c, a
+	inc hl
+
+	ld b, $0
+.loop2
+	ld a, $4 ; 4 pokemon per map
+	cp b
+	jr z, .loop
+	ld a, [wPokedexNum] ; ID of the mon we're searching for
+	; Do old rod and good rod mons manually because there's so little of them
+	cp MAGIKARP
+	jr z, .found
+	cp POLIWAG
+	jr z, .found
+	cp GOLDEEN
+	jr z, .found
+	cp KRABBY
+	jr z, .found
+	cp [hl]
+	jr nz, .notfound
+.found
+	dec de
+	ld a, [de]
+	cp c
+	inc de
+	jr z, .notfound ; already added this to buffer
+	ld a, c ; found so add map id to list
+	ld [de], a
+	inc de
+.notfound
+	inc hl
+	inc hl
+	inc b
+	jr .loop2
+.done
+	pop bc
+	pop hl
+	ret
