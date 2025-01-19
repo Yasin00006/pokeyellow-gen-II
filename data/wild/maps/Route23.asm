@@ -8,7 +8,7 @@ Route23WildMons:
 	db 50, FEAROW
 	db 48, SANDSLASH
 	db 48, ARBOK
-	db 50, FEAROW
+	db 50, RATICATE
 	db  5, EEVEE
 	end_grass_wildmons
 

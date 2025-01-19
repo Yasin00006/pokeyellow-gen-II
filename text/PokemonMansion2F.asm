@@ -60,7 +60,7 @@ _PokemonMansion2F_OakBeforeBattleText1::
 	prompt
 	
 _PokemonMansion2F_OakBeforeBattleText2::
-	para "Looking at the"
+	text "Looking at the"
 	line "story of MEWTWO,"
 	
 	para "one ponders its"
@@ -68,7 +68,7 @@ _PokemonMansion2F_OakBeforeBattleText2::
 	prompt
 
 _PokemonMansion2F_OakBeforeBattleText3::
-	para "I spent many"
+	text "I spent many"
 	line "years exploring"
 	cont "the region to"
 	cont "discover every"
@@ -82,7 +82,7 @@ _PokemonMansion2F_OakBeforeBattleText3::
 	prompt
 
 _PokemonMansion2F_OakBeforeBattleText4::
-	para "To think humans"
+	text "To think humans"
 	line "were capable"
 	cont "of creating such"
 	cont "a powerfull"
@@ -105,7 +105,7 @@ _PokemonMansion2F_OakBeforeBattleText5::
 	prompt
 
 _PokemonMansion2F_OakBeforeBattleText6::
-	para "But let's focus"
+	text "But let's focus"
 	line "on the present."
 
 	para "<PLAYER>!"

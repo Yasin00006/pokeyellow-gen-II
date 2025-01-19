@@ -37,14 +37,19 @@ IsSurfingAllowed:
 	ret nc
 	ld hl, wStatusFlags1
 	res BIT_SURF_ALLOWED, [hl]
+	call InitializeFieldMoveTextBox
 	ld hl, CurrentTooFastText
-	jp PrintText
+	jp .finish
 .forcedToRideBike
 	ld hl, wStatusFlags1
 	res BIT_SURF_ALLOWED, [hl]
+	call InitializeFieldMoveTextBox
 	ld hl, CyclingIsFunText
-	jp PrintText
-
+.finish
+	call PrintText
+	call CloseFieldMoveTextBox
+	ret
+	
 SeafoamIslandsB4FStairsCoords:
 	dbmapcoord  7, 11
 	db -1 ; end
