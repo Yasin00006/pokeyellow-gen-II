@@ -1270,11 +1270,11 @@ PikachuEvosMoves:
 	db EVOLVE_ITEM, THUNDER_STONE, 1, RAICHU
 	db 0
 ; Learnset
+	db 3, TAIL_WHIP
 	db 6, QUICK_ATTACK
 	db 8, THUNDER_WAVE
-	db 11, TAIL_WHIP
+	db 12, DOUBLE_KICK
 	db 15, DOUBLE_TEAM
-	db 15, DOUBLE_KICK
 	db 20, THUNDERPUNCH
 	db 24, HEADBUTT
 	db 30, THUNDERBOLT
@@ -1287,9 +1287,9 @@ RaichuEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 6, TAIL_WHIP
+	db 3, TAIL_WHIP
+	db 6, QUICK_ATTACK
 	db 8, THUNDER_WAVE
-	db 11, QUICK_ATTACK
 	db 15, DOUBLE_TEAM
 	db 20, THUNDERPUNCH
 	db 24, HEADBUTT
