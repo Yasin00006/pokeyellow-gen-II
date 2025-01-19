@@ -53,13 +53,12 @@ _ViridianForestYoungster4EndBattleText::
 	prompt
 
 _ViridianForestYoungster4AfterBattleText::
-	text "Sometimes, you"
-	line "can find stuff on"
-	cont "the ground!"
+	text "PINSIR is a very"
+	line "rare #MON!"
 
-	para "I'm looking for"
-	line "the stuff I"
-	cont "dropped!"
+	para "My Dad spent"
+	line "a lot of effort"
+	cont "to get it for me!"
 	done
 
 _ViridianForestCooltrainerFBattleText::

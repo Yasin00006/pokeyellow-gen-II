@@ -87,6 +87,7 @@ SpriteSheetPointerTable:
 	overworld_sprite MoltresSprite, 12          ; SPRITE_MOLTRES
 	overworld_sprite ZapdosSprite, 12           ; SPRITE_ZAPDOS
 	overworld_sprite MewtwoSprite, 12           ; SPRITE_MEWTWO
+	overworld_sprite MewSprite, 12              ; SPRITE_MEW
 	overworld_sprite KabutoSprite, 12           ; SPRITE_KABUTO
 	overworld_sprite LaprasSprite, 12           ; SPRITE_LAPRAS
 	overworld_sprite PoliwrathSprite, 12        ; SPRITE_POLIWRATH

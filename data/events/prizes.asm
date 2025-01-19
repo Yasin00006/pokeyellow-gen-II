@@ -30,6 +30,7 @@ PrizeMenuMon2Cost:
 PrizeMenuTMsEntries:
 	db TM_DRAGON_RAGE
 	db TM_HYPER_BEAM
+	db TM_SUBSTITUTE
 	db TM_ICE_BEAM
 	db TM_THUNDERBOLT
 	db TM_FLAMETHROWER
@@ -38,6 +39,7 @@ PrizeMenuTMsEntries:
 PrizeMenuTMsCost:
 	bcd2 1500
 	bcd2 5000
+	bcd2 3500
 	bcd2 2500
 	bcd2 2500
 	bcd2 2500

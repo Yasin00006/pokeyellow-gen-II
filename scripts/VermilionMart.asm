@@ -14,3 +14,6 @@ VermilionMartCooltrainerMText:
 VermilionMartCooltrainerFText:
 	text_far _VermilionMartCooltrainerFText
 	text_end
+
+VermilionMartClerkText::
+	script_mart POKE_BALL, GREAT_BALL, POTION, SUPER_POTION, REVIVE, REPEL, ANTIDOTE, AWAKENING, PARLYZ_HEAL, BURN_HEAL

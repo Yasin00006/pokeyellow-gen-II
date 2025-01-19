@@ -14,3 +14,6 @@ CinnabarMartSilphWorkerFText:
 CinnabarMartScientistText:
 	text_far _CinnabarMartScientistText
 	text_end
+
+CinnabarMartClerkText::
+	script_mart ULTRA_BALL, HYPER_POTION, REVIVE, FULL_HEAL, MAX_REPEL, ESCAPE_ROPE, TM_BUBBLEBEAM, TM_DIG, TM_MIMIC, TM_METRONOME, TM_SELFDESTRUCT, TM_SKULL_BASH, TM_PSYWAVE, TM_TRI_ATTACK

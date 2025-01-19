@@ -47,7 +47,7 @@ SpecialTrainerMoves:
 	db 5, 3, TOXIC
 	db 0
 
-	db BLAINE, 1
+	db BLAINE, 1 ; 52, RAPIDASH, 51, CHARIZARD, 51, NINETALES, 52, ARCANINE, 53, MAGMAR, 0
 	db 2, 2, FIRE_BLAST
 	db 2, 3, SLASH
 	db 2, 4, SEISMIC_TOSS
@@ -327,4 +327,23 @@ SpecialTrainerMoves:
     db 6, 4, BLIZZARD
     db 0
 
-	db -1 ; end
+	db PROF_OAK, 2 ; 78, TAUROS, 77, ARCANINE, 77, EXEGGUTOR, 77, GYARADOS, 78, SNORLAX, 81, DRAGONITE, 0
+    db 1, 1, HYPER_BEAM
+    db 1, 2, EARTHQUAKE
+    db 1, 3, BLIZZARD
+    db 1, 4, THUNDER
+    db 2, 1, THUNDER_WAVE
+    db 3, 1, BUBBLEBEAM
+    db 3, 4, REFLECT
+    db 4, 1, FIRE_BLAST
+    db 4, 2, SOLARBEAM
+    db 5, 1, AMNESIA
+    db 5, 2, REFLECT
+    db 5, 3, REST
+    db 6, 1, EARTHQUAKE
+    db 6, 2, ROCK_SLIDE
+    db 6, 3, THUNDER
+    db 6, 4, SLUDGE
+    db 0
+	
+    db -1 ; end

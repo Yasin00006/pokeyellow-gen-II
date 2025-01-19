@@ -4,8 +4,8 @@ SeafoamIslandsB4FWildMons:
 	db 36, ZUBAT
 	db 38, JYNX
 	db 39, KINGLER
-	db 34, SEEL
-	db 35, SEEL
+	db 33, SEEL
+	db 33, SEEL
 	db 40, JYNX
 	db 45, GOLBAT
 	db 39, DEWGONG

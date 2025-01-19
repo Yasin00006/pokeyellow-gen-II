@@ -9,7 +9,7 @@ VictoryRoad2FWildMons:
 	db 45, ONIX
 	db 47, RHYDON
 	db 48, GOLEM
-	db 48, GOLEM
+	db 48, HITMONCHAN
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

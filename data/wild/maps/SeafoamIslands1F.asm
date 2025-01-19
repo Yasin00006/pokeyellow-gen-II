@@ -8,7 +8,7 @@ SeafoamIslands1FWildMons:
 	db 32, SLOWPOKE
 	db 35, SLOWPOKE
 	db 32, GOLBAT
-	db 35, JYNX
+	db 35, GOLBAT
 	db 36, JYNX
 	end_grass_wildmons
 

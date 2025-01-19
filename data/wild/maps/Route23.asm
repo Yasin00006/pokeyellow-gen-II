@@ -6,9 +6,9 @@ Route23WildMons:
 	db 49, NIDOKING
 	db 49, NIDOQUEEN
 	db 50, FEAROW
-	db 41, SANDSLASH
-	db 41, ARBOK
-	db 45, FEAROW
+	db 48, SANDSLASH
+	db 48, ARBOK
+	db 50, FEAROW
 	db  5, EEVEE
 	end_grass_wildmons
 

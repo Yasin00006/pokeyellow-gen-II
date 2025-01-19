@@ -7,7 +7,7 @@ SeafoamIslandsB2FWildMons:
 	db 37, GOLBAT
 	db 33, SLOWPOKE
 	db 38, JYNX
-	db 30, SEEL
+	db 28, KINGLER
 	db 35, SLOWPOKE
 	db 38, SLOWBRO
 	end_grass_wildmons
