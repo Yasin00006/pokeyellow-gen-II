@@ -88,7 +88,7 @@ _PokemonMansion2F_OakBeforeBattleText4::
 	cont "a powerfull"
 	cont "#MON..."
 
-	para "But these"
+	para "But those"
 	line "sientists..."
 	cont "What drove"
 	cont "them..."

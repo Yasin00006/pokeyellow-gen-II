@@ -172,7 +172,7 @@ _PokemonCenterWelcomeText::
 _ShallWeHealYourPokemonText::
 	text "Shall we heal your"
 	line "#MON?"
-	done
+	prompt
 
 _NeedYourPokemonText::
 	text "OK. We'll need"
@@ -188,6 +188,11 @@ _PokemonFightingFitText::
 	text "Thank you!"
 	line "Your #MON are"
 	cont "fighting fit!"
+	prompt
+
+ _PokemonFightingFitShortText::
+	text "Your #MON are"
+	line "fighting fit!"
 	prompt
 
 _PokemonCenterFarewellText::
