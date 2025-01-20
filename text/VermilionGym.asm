@@ -136,29 +136,38 @@ _VermilionGymSailorAfterBattleText::
 	done
 
 _VermilionGymGymGuideChampInMakingText::
-	text "Yo! Champ in"
+	text "Yo! CHAMP in"
 	line "making!"
 
-	para "LT.SURGE has a"
-	line "nickname. People"
-	cont "refer to him as"
-	cont "the Lightning"
-	cont "American!"
+	para "LT.SURGE is"
+	line "most known for"
+	cont "only using a"
+	cont "single #MON"
+	cont "for his team!"
 
-	para "He's an expert on"
-	line "electric #MON!"
+	para "In doing so,"
+	line "his ace has"
+	cont "become extremely"
+	cont "powerful!"
 
 	para "Birds and water"
 	line "#MON are at"
-	cont "risk! Beware of"
-	cont "paralysis too!"
+	cont "risk! But that"
+	cont "isn't all!"
 
-	para "LT.SURGE is very"
-	line "cautious!"
+	para "LT.SURGE has"
+	line "taught his"
+	cont "#MON a very"
+	cont "strong water"
+	cont "technique."
 
-	para "You'll have to"
-	line "break a code to"
-	cont "get to him!"
+	para "This makes it"
+	line "a hard fight for"
+	cont "any one #MON"
+	cont "to solo!"
+
+	para "Teamwork is the"
+	line "key to winning!"
 	done
 
 _VermilionGymGymGuideBeatLTSurgeText::

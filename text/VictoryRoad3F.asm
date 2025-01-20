@@ -10,7 +10,7 @@ _VictoryRoad3FCooltrainerM1EndBattleText::
 
 _VictoryRoad3FCooltrainerM1AfterBattleText::
 	text "You beat GIOVANNI"
-	line "of TEAM ROCKET?"
+	line "of TEAM ROCKET!?"
 	done
 
 _VictoryRoad3FCooltrainerF1BattleText::
