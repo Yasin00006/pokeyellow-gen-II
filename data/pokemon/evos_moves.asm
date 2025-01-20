@@ -728,7 +728,7 @@ SlowpokeEvosMoves:
 KadabraEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE, 1, ALAKAZAM
-	db EVOLVE_LEVEL, 37, ALAKAZAM
+	db EVOLVE_LEVEL, 40, ALAKAZAM
 	db 0
 ; Learnset
 	db 16, CONFUSION
@@ -1124,17 +1124,17 @@ DoduoEvosMoves:
 
 PoliwagEvosMoves:
 ; Evolutions
-	db EVOLVE_LEVEL, 25, POLIWHIRL
+	db EVOLVE_LEVEL, 18, POLIWHIRL
 	db 0
 ; Learnset
 	db 6, MIST
 	db 9, BUBBLE
 	db 13, WATER_GUN
 	db 22, BUBBLEBEAM
-	db 31, BODY_SLAM
-	db 37, HYPNOSIS
-	db 40, AMNESIA
-	db 45, HYDRO_PUMP
+	db 30, BODY_SLAM
+	db 36, HYPNOSIS
+	db 39, AMNESIA
+	db 43, HYDRO_PUMP
 	db 0
 
 JynxEvosMoves:
@@ -2039,7 +2039,7 @@ MissingNo92EvosMoves:
 HaunterEvosMoves:
 ; Evolutions
 	db EVOLVE_TRADE, 1, GENGAR
-	db EVOLVE_LEVEL, 37, GENGAR
+	db EVOLVE_LEVEL, 40, GENGAR
 	db 0
 ; Learnset
 	db 10, SMOG

@@ -1,6 +1,6 @@
 	db DEX_NINETALES ; pokedex id
 
-	db  73,  76,  75, 100, 100
+	db  75,  80,  75, 100, 100
 	;   hp  atk  def  spd  spc
 
 	db FIRE, FIRE ; type
