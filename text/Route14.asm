@@ -11,9 +11,17 @@ _Route14CooltrainerM1EndBattleText::
 
 _Route14CooltrainerM1AfterBattleText::
 	text "You have some HMs,"
-	line "right? #MON"
+	line "right? Some"
+	cont "say #MON"
 	cont "can't ever forget"
-	cont "those moves."
+	cont "those moves,"
+
+	para "but it's not"
+	line "true."
+	
+	para "So it's always"
+	line "safe to have"
+	cont "them on you!"
 	done
 
 _Route14CooltrainerM2BattleText::

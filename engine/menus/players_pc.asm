@@ -106,6 +106,9 @@ PlayerPCDeposit:
 	ld [wListMenuID], a
 	call DisplayListMenuID
 	jp c, PlayerPCMenu
+	ld a, [wCurListMenuItem]
+	call IsItemHM
+	jr c, .CantDeposit
 	call IsKeyItem
 	ld a, 1
 	ld [wItemQuantity], a
@@ -135,7 +138,11 @@ PlayerPCDeposit:
 	ld hl, ItemWasStoredText
 	call PrintText
 	jp .loop
-
+.CantDeposit
+	ld hl, TooImportantToDepositText
+	call PrintText
+	jp .loop
+	
 PlayerPCWithdraw:
 	xor a
 	ld [wCurrentMenuItem], a
@@ -245,6 +252,10 @@ PlayersPCMenuEntries:
 	next "TOSS ITEM"
 	next "LOG OFF@"
 
+TooImportantToDepositText:
+	text_far _TooImportantToDepositText
+	text_end
+	
 TurnedOnPC2Text:
 	text_far _TurnedOnPC2Text
 	text_end
