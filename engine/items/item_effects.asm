@@ -1700,8 +1700,12 @@ INCLUDE "data/tilesets/escape_rope_tilesets.asm"
 
 ItemUseRepel:
 	ld b, 100
+	ld a, REPEL
+	ld [wRepelType], a
 
 ItemUseRepelCommon:
+	ld a, b
+	ld [wRepelTypeSteps], a
 	ld a, [wIsInBattle]
 	and a
 	jp nz, ItemUseNotTime
@@ -1746,10 +1750,14 @@ ItemUseGuardSpec:
 
 ItemUseSuperRepel:
 	ld b, 200
+	ld a, SUPER_REPEL
+	ld [wRepelType], a
 	jp ItemUseRepelCommon
 
 ItemUseMaxRepel:
 	ld b, 250
+	ld a, MAX_REPEL
+	ld [wRepelType], a
 	jp ItemUseRepelCommon
 
 ItemUseDireHit:

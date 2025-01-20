@@ -26,6 +26,14 @@ _RepelWoreOffText::
 	line "wore off."
 	done
 
+_RepelWoreOffUseAnotherText::
+	text_ram wStringBuffer
+	text "'s"
+	line "effect wore off."
+
+	para "Use another?"
+	done
+
 _PokemartBuyingGreetingText::
 	text "Take your time."
 	done
